@@ -1,7 +1,6 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/image_texttile.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
 
 class EnterAddressPage extends StatelessWidget {
   const EnterAddressPage({super.key});
@@ -41,13 +40,7 @@ class EnterAddressPage extends StatelessWidget {
               ),
               SizedBox(height: 8),
               TextFormField(
-                onFieldSubmitted: (value) {
-                  Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
-                    (route) => false,
-                  );
-                },
+                onFieldSubmitted: (value) {},
                 decoration: InputDecoration(
                   prefixIcon: Icon(
                     Amicons.iconly_location_curved_fill,

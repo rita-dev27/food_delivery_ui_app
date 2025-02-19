@@ -1,9 +1,9 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
-import 'package:flutter_project_1/page/home/widgets/category_card_widget.dart';
 
-import 'package:flutter_project_1/page/home/widgets/food_card_widget.dart';
+import 'package:flutter_project_1/widgets/category_card_widget.dart';
+
+import 'package:flutter_project_1/widgets/food_card_widget.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -68,10 +68,7 @@ class CategoryPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(15)),
                       child: TextFormField(
                         onFieldSubmitted: (value) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => HomePage()));
+                          
                         },
                         decoration: InputDecoration(
                           prefixIcon: Icon(

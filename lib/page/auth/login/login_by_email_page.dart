@@ -5,7 +5,7 @@ import 'package:flutter_project_1/page/auth/forgot_password/forgot_password_by_e
 import 'package:flutter_project_1/page/auth/login/login_by_phone_page.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/custom_button.dart';
 import 'package:flutter_project_1/page/auth/register/register_page.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
+import 'package:flutter_project_1/page/dashboard/dashboard_page.dart';
 
 class LoginByEmailPage extends StatelessWidget {
   const LoginByEmailPage({super.key});
@@ -113,7 +113,7 @@ class LoginByEmailPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => DashboardPage()),
                     (route) => false,
                   );
                 }),
@@ -184,7 +184,7 @@ class LoginByEmailPage extends StatelessWidget {
               onTap: () {
                 Navigator.pushAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(builder: (context) => DashboardPage()),
                   (route) => false,
                 );
               },
@@ -224,7 +224,7 @@ class LoginByEmailPage extends StatelessWidget {
               onTap: () {
                 Navigator.pushAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(builder: (context) => DashboardPage()),
                   (route) => false,
                 );
               },

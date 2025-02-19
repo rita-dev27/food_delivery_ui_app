@@ -1,6 +1,6 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/page/home/card_list_page.dart';
+import 'package:flutter_project_1/page/dashboard/profile/payment_method/card_list_page.dart';
 
 class CardPaymentsPage extends StatelessWidget {
   const CardPaymentsPage({super.key});

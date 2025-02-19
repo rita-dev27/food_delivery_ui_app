@@ -5,7 +5,6 @@ import 'package:flutter_project_1/page/auth/login/login_by_email_page.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/custom_button.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/socialmedia_buttontile.dart';
 import 'package:flutter_project_1/page/auth/register/enter_address_page.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -144,13 +143,7 @@ class RegisterPage extends StatelessWidget {
               ),
               SizedBox(height: 8),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
-                    (route) => false,
-                  );
-                },
+                onTap: () {},
                 child: SocialMediaButtonWidget(
                   icon: Amicons.remix_google_fill,
                   color: Colors.green,

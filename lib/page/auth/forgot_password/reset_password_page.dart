@@ -2,7 +2,7 @@ import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/image_texttile.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/custom_button.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
+import 'package:flutter_project_1/page/dashboard/dashboard_page.dart';
 
 class ResetPasswordPage extends StatelessWidget {
   const ResetPasswordPage({super.key});
@@ -41,7 +41,6 @@ class ResetPasswordPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15),
                         borderSide: BorderSide(color: Colors.transparent))),
               ),
-              
               SizedBox(height: 6),
               TextFormField(
                 obscureText: true,
@@ -64,7 +63,7 @@ class ResetPasswordPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(builder: (context) => HomePage()),
+                      MaterialPageRoute(builder: (context) => DashboardPage()),
                       (route) => false,
                     );
                   },

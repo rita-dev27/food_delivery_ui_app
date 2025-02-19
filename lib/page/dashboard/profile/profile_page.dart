@@ -2,9 +2,9 @@ import 'package:amicons/amicons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_project_1/page/home/account_info_page.dart';
-import 'package:flutter_project_1/page/home/change_password_page.dart';
-import 'package:flutter_project_1/page/home/payments_method_page.dart';
+import 'package:flutter_project_1/page/dashboard/profile/account_info/account_info_page.dart';
+import 'package:flutter_project_1/page/dashboard/profile/change_password/change_password_page.dart';
+import 'package:flutter_project_1/page/dashboard/profile/payment_method/payments_method_page.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});

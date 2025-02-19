@@ -1,6 +1,5 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
 
 class CardListPage extends StatelessWidget {
   const CardListPage({super.key});
@@ -130,14 +129,7 @@ class CardListPage extends StatelessWidget {
                                       ),
                                     ),
                                     child: ListTile(
-                                        onTap: () {
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    HomePage()),
-                                          );
-                                        },
+                                        onTap: () {},
                                         visualDensity: VisualDensity.compact,
                                         dense: true,
                                         contentPadding: EdgeInsets.zero,

@@ -18,10 +18,10 @@ com.example.flutter_project_1.app-lifecycle-runtime-2.7.0-16 /Users/mac/.gradle/
 com.example.flutter_project_1.app-jetified-core-1.0.0-17 /Users/mac/.gradle/caches/transforms-3/c31a4bb5a15a2ee7a96dbe06c89e85f5/transformed/jetified-core-1.0.0/res
 com.example.flutter_project_1.app-jetified-lifecycle-process-2.7.0-18 /Users/mac/.gradle/caches/transforms-3/dbde9cdc77876e4df7bbc93ff1556b43/transformed/jetified-lifecycle-process-2.7.0/res
 com.example.flutter_project_1.app-jetified-startup-runtime-1.1.1-19 /Users/mac/.gradle/caches/transforms-3/fabdcf8916c57220c7a394d04ce23100/transformed/jetified-startup-runtime-1.1.1/res
-com.example.flutter_project_1.app-debug-20 /Users/mac/Desktop/rita/food_delivery_ui_app/android/app/src/debug/res
-com.example.flutter_project_1.app-main-21 /Users/mac/Desktop/rita/food_delivery_ui_app/android/app/src/main/res
-com.example.flutter_project_1.app-pngs-22 /Users/mac/Desktop/rita/food_delivery_ui_app/build/app/generated/res/pngs/debug
-com.example.flutter_project_1.app-resValues-23 /Users/mac/Desktop/rita/food_delivery_ui_app/build/app/generated/res/resValues/debug
-com.example.flutter_project_1.app-packageDebugResources-24 /Users/mac/Desktop/rita/food_delivery_ui_app/build/app/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.example.flutter_project_1.app-packageDebugResources-25 /Users/mac/Desktop/rita/food_delivery_ui_app/build/app/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.example.flutter_project_1.app-merged_res-26 /Users/mac/Desktop/rita/food_delivery_ui_app/build/app/intermediates/merged_res/debug
+com.example.flutter_project_1.app-debug-20 /Users/mac/Desktop/food_delivery_ui_app/android/app/src/debug/res
+com.example.flutter_project_1.app-main-21 /Users/mac/Desktop/food_delivery_ui_app/android/app/src/main/res
+com.example.flutter_project_1.app-pngs-22 /Users/mac/Desktop/food_delivery_ui_app/build/app/generated/res/pngs/debug
+com.example.flutter_project_1.app-resValues-23 /Users/mac/Desktop/food_delivery_ui_app/build/app/generated/res/resValues/debug
+com.example.flutter_project_1.app-packageDebugResources-24 /Users/mac/Desktop/food_delivery_ui_app/build/app/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.flutter_project_1.app-packageDebugResources-25 /Users/mac/Desktop/food_delivery_ui_app/build/app/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.flutter_project_1.app-merged_res-26 /Users/mac/Desktop/food_delivery_ui_app/build/app/intermediates/merged_res/debug

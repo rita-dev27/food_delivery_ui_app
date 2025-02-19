@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/custom_button.dart';
-import 'package:flutter_project_1/page/home/change_password_page.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
+import 'package:flutter_project_1/page/dashboard/profile/change_password/change_password_page.dart';
 
 class AccountInfoPage extends StatelessWidget {
   const AccountInfoPage({super.key});
@@ -56,7 +55,6 @@ class AccountInfoPage extends StatelessWidget {
                     thickness: 2,
                     height: 1,
                   ),
-                  
                   SizedBox(height: 20),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),

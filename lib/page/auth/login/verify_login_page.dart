@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/image_texttile.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/custom_button.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
+import 'package:flutter_project_1/page/dashboard/dashboard_page.dart';
+
 import 'package:pinput/pinput.dart';
 
 class VerifyLoginPage extends StatelessWidget {
@@ -58,7 +59,7 @@ class VerifyLoginPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(builder: (context) => HomePage()),
+                      MaterialPageRoute(builder: (context) => DashboardPage()),
                       (route) => false,
                     );
                   },

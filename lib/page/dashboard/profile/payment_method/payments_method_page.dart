@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/custom_button.dart';
-import 'package:flutter_project_1/page/home/card_payments_page.dart';
+import 'package:flutter_project_1/page/dashboard/profile/payment_method/card_payments_page.dart';
 
 class PaymentsMethodPage extends StatelessWidget {
   const PaymentsMethodPage({super.key});

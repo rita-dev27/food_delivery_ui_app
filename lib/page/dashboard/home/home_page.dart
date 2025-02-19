@@ -2,13 +2,14 @@ import 'dart:math';
 
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
-import 'package:flutter_project_1/page/home/widgets/catagory_widget.dart';
-import 'package:flutter_project_1/page/home/widgets/food_card_items_widget.dart';
-import 'package:flutter_project_1/page/home/widgets/food_card_widget.dart';
+import 'package:flutter_project_1/page/dashboard/dashboard_page.dart';
+import 'package:flutter_project_1/page/dashboard/others/restaurant_details/restaurant_details_page.dart';
+import 'package:flutter_project_1/widgets/catagory_widget.dart';
+import 'package:flutter_project_1/widgets/food_card_items_widget.dart';
+import 'package:flutter_project_1/widgets/food_card_widget.dart';
 
-class DashBoardPage extends StatelessWidget {
-  const DashBoardPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
   @override
   Widget build(BuildContext context) {
     List<String> namelist = [
@@ -33,7 +34,7 @@ class DashBoardPage extends StatelessWidget {
       'assets/image/subway.jpg',
       'assets/image/subway.jpg',
     ];
-    
+
     List<String> foodnamelist = ['Subway', 'Taco Bell', 'Subway', 'Subway'];
     List<String> modelist = ['Open', 'Close', 'Open', 'Open'];
     List<String> distancelist = ['1.5km', '0.2 km', '1.5km', '1.5km'];
@@ -64,7 +65,7 @@ class DashBoardPage extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomePage()));
+                                  builder: (context) => DashboardPage()));
                         },
                         decoration: InputDecoration(
                           prefixIcon: Icon(
@@ -301,9 +302,17 @@ class DashBoardPage extends StatelessWidget {
                         physics: NeverScrollableScrollPhysics(),
                         itemBuilder: (BuildContext context, int index) {
                           return Padding(
-                            padding: const EdgeInsets.only(top: 16),
+                            padding: EdgeInsets.only(top: 16),
                             child: Column(children: [
                               FoodCardItemsWidget(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              RestaurantDetailsPage(),
+                                        ));
+                                  },
                                   image: 'assets/image/burgerimage.jpg',
                                   name: 'Burger King $index',
                                   mode: 'Open',

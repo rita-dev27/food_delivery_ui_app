@@ -1,6 +1,5 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
@@ -10,7 +9,7 @@ class SearchPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(
-          preferredSize: Size.fromHeight(146),
+          preferredSize: Size.fromHeight(100),
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Container(
@@ -27,12 +26,7 @@ class SearchPage extends StatelessWidget {
                               color: Color(0xffF4F5F7),
                               borderRadius: BorderRadius.circular(15)),
                           child: TextFormField(
-                              onFieldSubmitted: (value) {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => HomePage()));
-                              },
+                              onFieldSubmitted: (value) {},
                               decoration: InputDecoration(
                                 suffixIcon: Icon(
                                     Amicons.flaticon_cross_circle_sharp_fill),
@@ -149,6 +143,7 @@ class SearchPage extends StatelessWidget {
                               ],
                             );
                           })
+                   
                     ],
                   ),
                 ),

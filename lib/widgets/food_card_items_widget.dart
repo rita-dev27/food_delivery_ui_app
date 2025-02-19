@@ -1,6 +1,5 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/page/home/home_page.dart';
 
 class FoodCardItemsWidget extends StatelessWidget {
   final String image;
@@ -11,7 +10,7 @@ class FoodCardItemsWidget extends StatelessWidget {
   final String item3;
   final String rate;
   final String distance;
-
+  final Function() onTap;
   const FoodCardItemsWidget(
       {super.key,
       required this.image,
@@ -21,15 +20,13 @@ class FoodCardItemsWidget extends StatelessWidget {
       required this.item2,
       required this.item3,
       required this.rate,
-      required this.distance});
+      required this.distance,
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
-      },
+      onTap: onTap,
       child: Container(
         width: double.infinity,
         color: Color(0xffFFFFFF),
