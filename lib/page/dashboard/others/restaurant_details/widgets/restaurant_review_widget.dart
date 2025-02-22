@@ -1,3 +1,5 @@
+import 'package:amicons/amicons.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantReviewWidget extends StatelessWidget {
@@ -8,19 +10,47 @@ class RestaurantReviewWidget extends StatelessWidget {
     return Container(
       height: 170,
       width: double.infinity,
-      decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 129, 10, 10),
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(10),
-          topRight: Radius.circular(10),
-          bottomLeft: Radius.circular(10),
-          bottomRight: Radius.circular(10),
-        ),
-        boxShadow: [
-          BoxShadow(
-              color: Color.fromRGBO(0, 0, 0, 0.07999999821186066),
-              offset: Offset(0, 4),
-              blurRadius: 25)
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 208, 12, 12),
+      ),
+      child: Column(
+        children: [
+          ListTile(
+            onTap: () {},
+            visualDensity: VisualDensity.compact,
+            dense: true,
+            contentPadding: EdgeInsets.zero,
+            leading: CachedNetworkImage(
+              imageUrl: "https://imgur.com/a/FUbHXsx",
+              placeholder: (context, url) => CircularProgressIndicator(),
+              errorWidget: (context, url, error) => Icon(Icons.error),
+            ),
+            title: Text(
+              "Title",
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.w700,
+                color: Color(0xFFAEAEAE),
+              ),
+            ),
+            subtitle: Text(
+              "Subtitle",
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.w700,
+                color: Color(0xFFAEAEAE),
+              ),
+            ),
+            trailing: Icon(
+              Amicons.vuesax_notification_1,
+              size: 10,
+              color: Color(0xFF030712),
+            ),
+          ),
         ],
       ),
     );

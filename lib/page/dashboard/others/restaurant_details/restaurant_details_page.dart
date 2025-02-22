@@ -53,60 +53,60 @@ class _RestaurantDetailsPageState extends State<RestaurantDetailsPage> {
                         aspectRatio: 2.0,
                         enlargeCenterPage: true,
                       ))),
-              SizedBox(height: 40),
+              SizedBox(height: 30),
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Column(children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          child: Row(
-                            children: [
-                              Flexible(
-                                child: Text("Burger King",
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 3,
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w700,
-                                      color: Color(0xFF172B4D),
-                                    )),
-                              ),
-                              SizedBox(width: 4),
-                              Icon(Amicons.remix_shield_check_fill,
-                                  size: 20, color: Color(0xFF00875A)),
-                            ],
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Row(
+                              children: [
+                                Flexible(
+                                  child: Text("Burger King",
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 3,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w700,
+                                        color: Color(0xFF172B4D),
+                                      )),
+                                ),
+                                SizedBox(width: 4),
+                                Icon(Amicons.remix_shield_check_fill,
+                                    size: 20, color: Color(0xFF00875A)),
+                              ],
+                            ),
                           ),
-                        ),
-                        Row(
-                          children: [
-                            SizedBox(width: 4),
-                            SizedBox(
-                                height: 36,
-                                child: TextButton(
-                                    style: ButtonStyle(
-                                      backgroundColor: WidgetStatePropertyAll(
-                                          Color(0xffFFEBE5)),
-                                    ),
-                                    onPressed: () {},
-                                    child: Text("Take Away",
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 1,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w200,
-                                          color: Color(0xFFEF9F27),
-                                        )))),
-                            SizedBox(width: 8),
-                            Icon(Amicons.vuesax_heart_fill,
-                                size: 20, color: Color(0xFFEF9F27)),
-                            SizedBox(width: 8),
-                          ],
-                        )
-                      ],
-                    ),
+                          Row(
+                            children: [
+                              SizedBox(width: 4),
+                              SizedBox(
+                                  height: 36,
+                                  child: TextButton(
+                                      style: ButtonStyle(
+                                        backgroundColor: WidgetStatePropertyAll(
+                                            Color(0xffFFEBE5)),
+                                      ),
+                                      onPressed: () {},
+                                      child: Text("Take Away",
+                                          overflow: TextOverflow.ellipsis,
+                                          maxLines: 1,
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w200,
+                                            color: Color(0xFFEF9F27),
+                                          )))),
+                              SizedBox(width: 8),
+                              Icon(Amicons.vuesax_heart_fill,
+                                  size: 20, color: Color(0xFFEF9F27)),
+                              SizedBox(width: 8),
+                            ],
+                          )
+                        ]),
+                    SizedBox(height: 12),
                     Row(
                       children: [
                         Text(
