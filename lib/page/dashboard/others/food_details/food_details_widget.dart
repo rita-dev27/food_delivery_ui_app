@@ -1,6 +1,7 @@
 import 'package:amicons/amicons.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/page/dashboard/others/addtocard/addto_cart_page.dart';
 
 class FoodDetailsWidget extends StatefulWidget {
   const FoodDetailsWidget({super.key});
@@ -20,48 +21,56 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
           color: Colors.white,
           child: Row(
             children: [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
-                child: Column(children: [
-                  Text("Price",
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                      style: TextStyle(
-                        fontSize: 17,
-                        fontWeight: FontWeight.w700,
-                        color: Color(0xFF172B4D),
-                      )),
-                  Text("\$ 5.99",
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w300,
-                        color: Color(0xFFEF9F27),
-                      )),
-                ]),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Price",
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 1,
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF172B4D),
+                            )),
+                        Text("\$ 5.99",
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 1,
+                            style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w300,
+                              color: Color(0xFFEF9F27),
+                            )),
+                      ]),
+                ),
               ),
-              Spacer(),
-              Container(
-                  height: 45,
-                  width: 184,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xffEF9F27),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12))),
-                    onPressed: () {},
-                    child: Text(
-                      "Add to Order",
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                      style: TextStyle(
-                          fontSize: 14,
-                          color: Color(
-                            0xFFFFFFFF,
-                          )),
-                    ),
-                  )),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xffEF9F27),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12))),
+                  onPressed: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AddToCartPage()),
+                    );
+                  },
+                  child: Text(
+                    "Add to Order",
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 1,
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Color(
+                          0xFFFFFFFF,
+                        )),
+                  ),
+                ),
+              ),
               SizedBox(width: 20)
             ],
           ),
@@ -69,14 +78,6 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 24),
-              Container(
-                height: 5,
-                width: 50,
-                decoration: BoxDecoration(
-                    color: Color(0xff979797),
-                    borderRadius: BorderRadius.circular(100)),
-              ),
               SizedBox(height: 30),
               Text("Extreme cheese whopper",
                   overflow: TextOverflow.ellipsis,

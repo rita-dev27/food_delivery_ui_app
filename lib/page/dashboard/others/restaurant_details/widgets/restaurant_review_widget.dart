@@ -44,56 +44,13 @@ class RestaurantReviewWidget extends StatelessWidget {
           return Column(
             children: [
               RestaurantReviewTypeWidget(
-                  profile: profile[index],
-                  name: name[index],
-                  time: time[index],
-                  review: review[index],
-                  likes: likes[index]),
-              index == 1
-                  ? Row(children: [
-                      Expanded(
-                        child: Image.asset('assets/image/searchbarburger.jpg',
-                            height: 54, width: 54),
-                      ),
-                      SizedBox(width: 8),
-                      Expanded(
-                        child: Image.asset('assets/image/friedchicken.jpg',
-                            height: 54, width: 54),
-                      ),
-                      SizedBox(width: 8),
-                      Expanded(
-                        child: Image.asset(
-                            'assets/image/restaurantcomboburger.jpg',
-                            height: 54,
-                            width: 54),
-                      ),
-                      SizedBox(width: 8),
-                      Expanded(
-                        child: Image.asset('assets/image/restaurantburger.jpg',
-                            height: 54, width: 54),
-                      ),
-                      SizedBox(width: 8),
-                      Container(
-                          width: 54,
-                          height: 54,
-                          decoration: BoxDecoration(
-                              color: Colors.grey,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(10),
-                                topRight: Radius.circular(10),
-                                bottomLeft: Radius.circular(10),
-                                bottomRight: Radius.circular(10),
-                              )),
-                          child: Center(
-                            child: Text("+1",
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.black,
-                                )),
-                          ))
-                    ])
-                  : SizedBox(),
+                profile: profile[index],
+                name: name[index],
+                time: time[index],
+                review: review[index],
+                likes: likes[index],
+                isPhotoAvailable: index == 1 ? true : false,
+              ),
               SizedBox(height: 16),
               index != 4 - 1
                   ? Divider(

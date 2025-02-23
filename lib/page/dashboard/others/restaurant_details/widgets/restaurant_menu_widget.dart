@@ -46,6 +46,8 @@ class RestaurantMenuWidget extends StatelessWidget {
                         showModalBottomSheet(
                             isScrollControlled: true,
                             useSafeArea: true,
+                            showDragHandle: true,
+                            backgroundColor: Colors.white,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(30),
