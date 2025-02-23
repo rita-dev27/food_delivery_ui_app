@@ -1,5 +1,6 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/page/dashboard/others/food_details/food_details_widget.dart';
 
 class RestaurantMenuWidget extends StatelessWidget {
   const RestaurantMenuWidget({super.key});
@@ -41,66 +42,79 @@ class RestaurantMenuWidget extends StatelessWidget {
                     right: (index == 10 - 1) ? 16 : 0,
                   ),
                   child: GestureDetector(
+                      onTap: () {
+                        showModalBottomSheet(
+                            isScrollControlled: true,
+                            useSafeArea: true,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(30),
+                                    topRight: Radius.circular(30))),
+                            context: context,
+                            builder: (BuildContext context) {
+                              return FoodDetailsWidget();
+                            });
+                      },
                       child: Container(
-                    width: 147,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Image.asset(
-                          'assets/image/restaurantburger.jpg',
-                          width: double.infinity,
-                          height: 116,
-                          fit: BoxFit.fill,
-                        ),
-                        SizedBox(height: 16),
-                        Row(
+                        width: 147,
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Flexible(
-                              child: Text(
-                                'Extreme cheese whopper JR',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                    color: Color(0xff172B4D),
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w600),
-                              ),
+                            Image.asset(
+                              'assets/image/restaurantburger.jpg',
+                              width: double.infinity,
+                              height: 116,
+                              fit: BoxFit.fill,
                             ),
-                            SizedBox(width: 4),
+                            SizedBox(height: 16),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Flexible(
+                                  child: Text(
+                                    'Extreme cheese whopper JR',
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                        color: Color(0xff172B4D),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                ),
+                                SizedBox(width: 4),
+                              ],
+                            ),
+                            SizedBox(height: 4),
+                            Row(
+                              children: [
+                                Text(
+                                  '\$ 5.99',
+                                  style: TextStyle(
+                                      color: Color(0xff00875A), fontSize: 16),
+                                ),
+                                SizedBox(width: 8),
+                                CircleAvatar(
+                                  backgroundColor: Color(
+                                    0xffC1C7D0,
+                                  ),
+                                  radius: 2,
+                                ),
+                                SizedBox(width: 8),
+                                Expanded(
+                                  child: Text(
+                                    'Burger',
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                        color: Color(0xff7A869A), fontSize: 16),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 12),
                           ],
                         ),
-                        SizedBox(height: 4),
-                        Row(
-                          children: [
-                            Text(
-                              '\$ 5.99',
-                              style: TextStyle(
-                                  color: Color(0xff00875A), fontSize: 16),
-                            ),
-                            SizedBox(width: 8),
-                            CircleAvatar(
-                              backgroundColor: Color(
-                                0xffC1C7D0,
-                              ),
-                              radius: 2,
-                            ),
-                            SizedBox(width: 8),
-                            Expanded(
-                              child: Text(
-                                'Burger',
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                    color: Color(0xff7A869A), fontSize: 16),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 12),
-                      ],
-                    ),
-                  )),
+                      )),
                 );
               }),
         ),

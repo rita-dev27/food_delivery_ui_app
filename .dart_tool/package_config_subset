@@ -2,6 +2,10 @@ amicons
 3.6
 file:///Users/mac/.pub-cache/hosted/pub.dev/amicons-1.0.1/
 file:///Users/mac/.pub-cache/hosted/pub.dev/amicons-1.0.1/lib/
+animated_rating_stars
+3.1
+file:///Users/mac/.pub-cache/hosted/pub.dev/animated_rating_stars-1.0.1/
+file:///Users/mac/.pub-cache/hosted/pub.dev/animated_rating_stars-1.0.1/lib/
 async
 3.4
 file:///Users/mac/.pub-cache/hosted/pub.dev/async-2.12.0/
@@ -254,4 +258,8 @@ flutter_test
 3.7
 file:///Users/mac/tools/flutter/packages/flutter_test/
 file:///Users/mac/tools/flutter/packages/flutter_test/lib/
+flutter_web_plugins
+3.7
+file:///Users/mac/tools/flutter/packages/flutter_web_plugins/
+file:///Users/mac/tools/flutter/packages/flutter_web_plugins/lib/
 2
