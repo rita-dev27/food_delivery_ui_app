@@ -169,7 +169,7 @@ class CategoryPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(
+                    padding:  EdgeInsets.symmetric(
                         horizontal: 16, vertical: 16),
                     child: Row(
                       children: [

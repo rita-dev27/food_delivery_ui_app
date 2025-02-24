@@ -203,31 +203,35 @@ class _RestaurantDetailsPageState extends State<RestaurantDetailsPage> {
                       ],
                     ),
                     SizedBox(height: 20),
-                    TextButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all(Color(0xffF4F5F7)),
-                            shape: (MaterialStateProperty.all<
-                                RoundedRectangleBorder>(RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            )))),
-                        onPressed: () {},
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 24),
-                          child: Text.rich(
-                            TextSpan(children: [
-                              TextSpan(
-                                  text: '%  ',
-                                  style: TextStyle(
-                                      color: Color(0xffEF9F27),
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: 'Save \$15.00 with code Total Dish',
-                                  style: TextStyle(color: Color(0xff172B4D))),
-                            ]),
-                          ),
-                        )),
+                    Container(
+                      width: double.infinity,
+                      child: TextButton(
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Color(0xffF4F5F7)),
+                              shape: (MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15),
+                              )))),
+                          onPressed: () {},
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 24),
+                            child: Text.rich(
+                              TextSpan(children: [
+                                TextSpan(
+                                    text: '%  ',
+                                    style: TextStyle(
+                                        color: Color(0xffEF9F27),
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold)),
+                                TextSpan(
+                                    text: 'Save \$15.00 with code Total Dish',
+                                    style: TextStyle(color: Color(0xff172B4D))),
+                              ]),
+                            ),
+                          )),
+                    ),
                     SizedBox(height: 24),
                   ])),
               Divider(

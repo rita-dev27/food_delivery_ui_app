@@ -14,7 +14,7 @@ class DashboardPage extends StatefulWidget {
 
 class _DashboardPageState extends State<DashboardPage> {
   int selectedIndex = 0;
-  
+
   List<Widget> pages = [
     HomePage(),
     CategoryPage(),
@@ -42,13 +42,13 @@ class _DashboardPageState extends State<DashboardPage> {
             showSelectedLabels: false,
             items: [
               BottomNavigationBarItem(
-                  icon: Icon(Amicons.remix_home), label: ""),
+                  icon: Icon(Amicons.lucide_layout_dashboard), label: ""),
               BottomNavigationBarItem(
-                  icon: Icon(Amicons.remix_home), label: ""),
+                  icon: Icon(Amicons.remix_compass), label: ""),
               BottomNavigationBarItem(
-                  icon: Icon(Amicons.remix_home), label: ""),
+                  icon: Icon(Amicons.vuesax_receipt_2_1), label: ""),
               BottomNavigationBarItem(
-                  icon: Icon(Amicons.remix_home), label: ""),
+                  icon: Icon(Amicons.iconly_profile_fill), label: ""),
             ]),
         body: pages[selectedIndex]);
   }
