@@ -1,5 +1,6 @@
 import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/page/dashboard/others/restaurant_details/restaurant_details_page.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
@@ -11,40 +12,40 @@ class SearchPage extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(100),
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
-            child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
-                child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: Column(children: [
-                      SizedBox(height: 52),
-                      // Searchbar Burger King
-                      Container(
-                          decoration: BoxDecoration(
-                              color: Color(0xffF4F5F7),
-                              borderRadius: BorderRadius.circular(15)),
-                          child: TextFormField(
-                              onFieldSubmitted: (value) {},
-                              decoration: InputDecoration(
-                                suffixIcon: Icon(
-                                    Amicons.flaticon_cross_circle_sharp_fill),
-                                filled: true,
-                                fillColor: Color(0xffF4F5F7),
-                                hintText: 'Burger King',
-                                hintStyle: TextStyle(color: Color(0xff172B4D)),
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                    borderSide:
-                                        BorderSide(color: Colors.transparent)),
-                                focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                    borderSide:
-                                        BorderSide(color: Colors.transparent)),
-                              )))
-                    ]))),
-          )),
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(children: [
+                        SizedBox(height: 52),
+                        // Searchbar Burger King
+                        Container(
+                            decoration: BoxDecoration(
+                                color: Color(0xffF4F5F7),
+                                borderRadius: BorderRadius.circular(15)),
+                            child: TextFormField(
+                                onFieldSubmitted: (value) {},
+                                decoration: InputDecoration(
+                                  suffixIcon: Icon(
+                                      Amicons.flaticon_cross_circle_sharp_fill),
+                                  filled: true,
+                                  fillColor: Color(0xffF4F5F7),
+                                  hintText: 'Burger King',
+                                  hintStyle:
+                                      TextStyle(color: Color(0xff172B4D)),
+                                  enabledBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(15),
+                                      borderSide: BorderSide(
+                                          color: Colors.transparent)),
+                                  focusedBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(15),
+                                      borderSide: BorderSide(
+                                          color: Colors.transparent)),
+                                )))
+                      ]))))),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -69,7 +70,14 @@ class SearchPage extends StatelessWidget {
                             return Column(
                               children: [
                                 ListTile(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                RestaurantDetailsPage(),
+                                          ));
+                                    },
                                     visualDensity: VisualDensity.compact,
                                     dense: true,
                                     contentPadding: EdgeInsets.zero,
@@ -143,7 +151,6 @@ class SearchPage extends StatelessWidget {
                               ],
                             );
                           })
-                   
                     ],
                   ),
                 ),

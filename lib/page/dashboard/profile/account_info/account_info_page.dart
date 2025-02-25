@@ -1,3 +1,4 @@
+import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/page/auth/login/widgets/custom_button.dart';
 import 'package:flutter_project_1/page/dashboard/profile/change_password/change_password_page.dart';
@@ -57,7 +58,7 @@ class AccountInfoPage extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Column(
                       children: [
                         // Full name
@@ -67,31 +68,30 @@ class AccountInfoPage extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
                               style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xFFAEAEAE),
                               )),
                         ),
                         SizedBox(height: 14),
-                        Container(
-                          height: 45,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: Color(0xffF4F5F7),
-                              borderRadius: BorderRadius.circular(15)),
-                          child: Row(
-                            children: [
-                              SizedBox(width: 16),
-                              Text(
-                                'Philippe Troussier',
-                                style: TextStyle(
-                                  color: Color(0xff172B4D),
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                        TextFormField(
+                            onFieldSubmitted: (value) {},
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xffF4F5F7),
+                              hintText: 'Philippe Troussier',
+                              hintStyle: TextStyle(
+                                  color: Color(0xff172B4D), fontSize: 14),
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                  borderSide:
+                                      BorderSide(color: Colors.transparent)),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                  borderSide:
+                                      BorderSide(color: Colors.transparent)),
+                            )),
+
                         SizedBox(height: 24),
                         Divider(
                           color: Color(0xffF4F5F7),
@@ -106,31 +106,30 @@ class AccountInfoPage extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
                               style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xFFAEAEAE),
                               )),
                         ),
                         SizedBox(height: 14),
-                        Container(
-                          height: 45,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: Color(0xffF4F5F7),
-                              borderRadius: BorderRadius.circular(15)),
-                          child: Row(
-                            children: [
-                              SizedBox(width: 16),
-                              Text(
-                                'troussier@gmail.com',
-                                style: TextStyle(
-                                  color: Color(0xff172B4D),
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                        TextFormField(
+                            onFieldSubmitted: (value) {},
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xffF4F5F7),
+                              hintText: 'troussier@gmail.com',
+                              hintStyle: TextStyle(
+                                  color: Color(0xff172B4D), fontSize: 14),
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                  borderSide:
+                                      BorderSide(color: Colors.transparent)),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                  borderSide:
+                                      BorderSide(color: Colors.transparent)),
+                            )),
+
                         SizedBox(height: 24),
                         Divider(
                           color: Color(0xffF4F5F7),
@@ -145,31 +144,30 @@ class AccountInfoPage extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
                               style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xFFAEAEAE),
                               )),
                         ),
                         SizedBox(height: 14),
-                        Container(
-                          height: 45,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: Color(0xffF4F5F7),
-                              borderRadius: BorderRadius.circular(15)),
-                          child: Row(
-                            children: [
-                              SizedBox(width: 16),
-                              Text(
-                                '(+1) 6102347305',
-                                style: TextStyle(
-                                  color: Color(0xff172B4D),
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                        TextFormField(
+                            onFieldSubmitted: (value) {},
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xffF4F5F7),
+                              hintText: '(+1) 6102347305',
+                              hintStyle: TextStyle(
+                                  color: Color(0xff172B4D), fontSize: 14),
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                  borderSide:
+                                      BorderSide(color: Colors.transparent)),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                  borderSide:
+                                      BorderSide(color: Colors.transparent)),
+                            )),
+
                         SizedBox(height: 24),
                       ],
                     ),

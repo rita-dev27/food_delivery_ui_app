@@ -1,7 +1,7 @@
 import 'package:amicons/amicons.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/page/dashboard/others/addtocard/addto_cart_page.dart';
+import 'package:flutter_project_1/page/dashboard/others/addtocart/addto_cart_page.dart';
 
 class FoodDetailsWidget extends StatefulWidget {
   const FoodDetailsWidget({super.key});
@@ -16,11 +16,10 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
     return Scaffold(
         backgroundColor: Colors.white,
         bottomNavigationBar: Container(
-          height: 90,
-          width: double.infinity,
-          color: Colors.white,
-          child: Row(
-            children: [
+            height: 90,
+            width: double.infinity,
+            color: Colors.white,
+            child: Row(children: [
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
@@ -72,9 +71,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                 ),
               ),
               SizedBox(width: 20)
-            ],
-          ),
-        ),
+            ])),
         body: SingleChildScrollView(
           child: Column(
             children: [

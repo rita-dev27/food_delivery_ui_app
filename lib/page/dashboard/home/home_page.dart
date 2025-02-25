@@ -4,6 +4,7 @@ import 'package:amicons/amicons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/page/dashboard/dashboard_page.dart';
 import 'package:flutter_project_1/page/dashboard/others/restaurant_details/restaurant_details_page.dart';
+import 'package:flutter_project_1/page/dashboard/others/search/search_page.dart';
 import 'package:flutter_project_1/widgets/catagory_widget.dart';
 import 'package:flutter_project_1/widgets/food_card_items_widget.dart';
 import 'package:flutter_project_1/widgets/food_card_widget.dart';
@@ -282,6 +283,7 @@ class HomePage extends StatelessWidget {
                                     name: foodnamelist[index],
                                     mode: modelist[index],
                                     distance: distancelist[index],
+                                    onTap: () {},
                                   ),
                                 );
                               }),
@@ -309,8 +311,7 @@ class HomePage extends StatelessWidget {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) =>
-                                              RestaurantDetailsPage(),
+                                          builder: (context) => SearchPage(),
                                         ));
                                   },
                                   image: 'assets/image/burgerimage.jpg',

@@ -67,9 +67,7 @@ class CategoryPage extends StatelessWidget {
                           color: Color(0xffF4F5F7),
                           borderRadius: BorderRadius.circular(15)),
                       child: TextFormField(
-                        onFieldSubmitted: (value) {
-                          
-                        },
+                        onFieldSubmitted: (value) {},
                         decoration: InputDecoration(
                           prefixIcon: Icon(
                             Amicons.iconly_location_fill,
@@ -159,68 +157,61 @@ class CategoryPage extends StatelessWidget {
             SizedBox(height: 16),
             // Best partners
             Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                  color: Color(0xffFFFFFF),
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15))),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding:  EdgeInsets.symmetric(
-                        horizontal: 16, vertical: 16),
-                    child: Row(
-                      children: [
-                        Text(
-                          'Best Partners',
-                          style: TextStyle(
-                              color: Color(0xff172B4D),
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        Spacer(),
-                        Text(
-                          'See all',
-                          style: TextStyle(
-                            color: Color(0xff172B4D),
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Divider(
-                    color: Color(0xffF4F5F7),
-                    thickness: 2,
-                    height: 1,
-                  ),
-                  SizedBox(height: 20),
-                  // card design
-                  Container(
-                    padding: const EdgeInsets.only(left: 16),
-                    height: 264,
-                    child: ListView.builder(
-                        physics: BouncingScrollPhysics(),
-                        scrollDirection: Axis.horizontal,
-                        shrinkWrap: true,
-                        itemCount: distancelist.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 16),
-                            child: FoodCardWidget(
-                              foodimage: foodimagelist[index],
-                              name: foodnamelist[index],
-                              mode: modelist[index],
-                              distance: distancelist[index],
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    color: Color(0xffFFFFFF),
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(15),
+                        topRight: Radius.circular(15))),
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 16, vertical: 16),
+                          child: Row(children: [
+                            Text(
+                              'Best Partners',
+                              style: TextStyle(
+                                  color: Color(0xff172B4D),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
                             ),
-                          );
-                        }),
-                  )
-                ],
-              ),
-            ),
+                            Spacer(),
+                            Text('See all',
+                                style: TextStyle(
+                                  color: Color(0xff172B4D),
+                                  fontSize: 16,
+                                ))
+                          ])),
+                      Divider(
+                        color: Color(0xffF4F5F7),
+                        thickness: 2,
+                        height: 1,
+                      ),
+                      SizedBox(height: 20),
+                      // card design
+                      Container(
+                          padding: EdgeInsets.only(left: 16),
+                          height: 264,
+                          child: ListView.builder(
+                              physics: BouncingScrollPhysics(),
+                              scrollDirection: Axis.horizontal,
+                              shrinkWrap: true,
+                              itemCount: distancelist.length,
+                              itemBuilder: (BuildContext context, int index) {
+                                return Padding(
+                                    padding: EdgeInsets.only(right: 16),
+                                    child: FoodCardWidget(
+                                      
+                                      foodimage: foodimagelist[index],
+                                      name: foodnamelist[index],
+                                      mode: modelist[index],
+                                      distance: distancelist[index], onTap: () {  },
+                                      
+                                    ));
+                              }))
+                    ])),
 
             // Category cards
             Padding(
